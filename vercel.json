@@ -1,0 +1,34 @@
+{
+  "headers": [
+    {
+      "source": "/set-wallpaper.bat",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/octet-stream; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"set-wallpaper.bat\""
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/hsmu-wallpaper.png",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/png"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>화성의과학대학교 강의실 바탕화면 설정</title>
+  <style>
+    :root {
+      --navy: #004181;
+      --cyan: #00b0f0;
+      --ink: #1a2433;
+      --muted: #5a6573;
+      --line: #d7dee8;
+      --bg: #f3f7fb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--navy);
+      color: #fff;
+      padding: 20px 24px;
+    }
+    header .brand {
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      opacity: 0.85;
+    }
+    header h1 {
+      margin: 4px 0 0;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 28px 20px 48px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .preview {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: block;
+      background: #fff;
+    }
+    .actions {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      align-items: center;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--cyan);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 18px;
+      padding: 14px 22px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+    .btn:hover { filter: brightness(0.95); }
+    .link {
+      color: var(--navy);
+      font-size: 15px;
+    }
+    h2 {
+      font-size: 16px;
+      margin: 28px 0 10px;
+      color: var(--navy);
+    }
+    ol, ul { padding-left: 1.3em; margin: 0; }
+    li { margin: 6px 0; }
+    .note {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">화성의과학대학교</div>
+    <h1>2026-2 학기 수업중간피드백 바탕화면</h1>
+  </header>
+  <main>
+    <div class="card">
+      <img class="preview" src="/preview.png" alt="2026-2 학기 수업중간피드백 QR 코드 바탕화면 미리보기" width="1920" height="1080">
+      <div class="actions">
+        <a class="btn" href="/set-wallpaper.bat" download="set-wallpaper.bat">바탕화면으로 설정</a>
+        <a class="link" href="/hsmu-wallpaper.png" download="hsmu-wallpaper.png">이미지만 다운로드</a>
+      </div>
+
+      <h2>사용 방법</h2>
+      <ol>
+        <li>위 <strong>바탕화면으로 설정</strong> 버튼을 눌러 <code>set-wallpaper.bat</code> 파일을 받습니다.</li>
+        <li>다운로드한 파일을 실행합니다.</li>
+        <li>Windows 보호 경고가 뜨면 <strong>추가 정보</strong>를 누른 뒤 <strong>실행</strong>을 선택합니다.</li>
+      </ol>
+
+      <p class="note">
+        관리자 권한은 필요하지 않습니다. 화면 비율이 달라도 QR 코드가 잘리지 않도록
+        ‘맞춤(Fit)’으로 지정합니다. 디프리즈·복원카드처럼 재시작 시 원상 복구하는 프로그램이
+        설치된 PC는, 재부팅 후 이전 바탕화면으로 돌아갈 수 있습니다.
+      </p>
+    </div>
+    <footer>화성의과학대학교 · 강의실 공용 PC용</footer>
+  </main>
+</body>
+</html>

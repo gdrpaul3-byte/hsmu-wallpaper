@@ -33,6 +33,6 @@
 
 이미지만 바로 바꿀 때는 `hsmu-wallpaper.png`와 `preview.png`를 교체해도 된다.
 
-프로덕션 주소가 바뀌면 `set-wallpaper.bat` 안의 `$Url`도 함께 수정한다.
+프로덕션 주소가 바뀌면 `scripts/set-wallpaper.ps1`의 `$Url`을 고치고 `python3 scripts/build-bat.py`로 `set-wallpaper.bat`를 다시 만든다(bat는 직접 수정 금지).
 
 자세한 파일 설명과 배포 절차는 `AGENTS.md`를 본다.
